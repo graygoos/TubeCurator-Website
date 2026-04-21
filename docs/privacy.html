@@ -76,7 +76,7 @@
         <div class="legal-content">
             <a href="index.html" class="back-link">← Back to Home</a>
             <h1>Privacy Policy</h1>
-            <p><strong>Effective Date:</strong> March 21, 2026</p>
+            <p><strong>Effective Date:</strong> April 7, 2026</p>
 
             <p>At TubeCurator, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application and website (gettubecurator.com).</p>
 
@@ -94,6 +94,7 @@
                 <li><strong>Usage Statistics:</strong> We collect anonymous data regarding your focus sessions,
                     including focus minutes, session frequency, and streaks, to provide you with insights into your
                     viewing habits.</li>
+                <li><strong>Gaze Focus Analytics:</strong> If you use the ARKit-powered 'Deep Focus' feature, we collect anonymous focus scores (% of session spent looking at the screen) to provide retention analytics.</li>
                 <li><strong>Shield Reflections:</strong> If you choose to use the 'Reflections' feature, we store your
                     self-reported feedback (e.g., whether a bypass was 'worth it' and the reason provided) to help you
                     track your progress.</li>
@@ -102,6 +103,12 @@
                     usage quotas.</li>
                 <li><strong>Diagnostics:</strong> We collect anonymous crash logs and performance metrics (via Firebase
                     Crashlytics and Performance Monitoring) to improve app stability.</li>
+            </ul>
+
+            <h3>1.3 Camera Data & Face Tracking</h3>
+            <ul>
+                <li><strong>Deep Focus Tracking:</strong> TubeCurator uses Apple's ARKit and your device's camera to monitor your gaze during video playback when the 'Deep Focus' feature is enabled.</li>
+                <li><strong>Privacy Assurance:</strong> TubeCurator <strong>does not</strong> record, store, or transmit any images, video, or identifiable biometric data from your camera. All processing required to determine your focus state is performed <strong>100% on-device</strong> and is discarded immediately after the focus score is calculated.</li>
             </ul>
 
             <h2>2. How We Use Your Information</h2>
@@ -139,7 +146,18 @@
             <p>We keep your personal information only as long as your account is active. You can delete your account and
                 all associated data at any time through the app settings.</p>
 
-            <h2>7. Contact Us</h2>
+            <h2>7. On-Device Storage &amp; Local Data</h2>
+            <p>TubeCurator and its third-party service providers (including Google/Firebase) may store data locally on your device to provide core app functionality. This includes:</p>
+            <ul>
+                <li><strong>Authentication Tokens:</strong> Secure credential tokens issued by Google Sign-In are stored on-device to keep you signed in between sessions. These function similarly to cookies and persist until you sign out or delete the app.</li>
+                <li><strong>Cached App Data:</strong> Channel metadata, video information, and feed data may be temporarily cached on your device to improve performance and reduce unnecessary network requests.</li>
+                <li><strong>Firebase SDK Local Storage:</strong> Firebase services (Authentication, Firestore) use local device storage to persist session state, synchronize data across devices, and support SDK performance monitoring. This is functionally similar to browser cookie storage.</li>
+                <li><strong>App Preferences:</strong> Settings such as your focus session preferences, notification permissions, and onboarding state are stored locally on your device using standard iOS system storage (UserDefaults).</li>
+                <li><strong>No Advertising Cookies:</strong> TubeCurator does not use advertising cookies, tracking pixels, or any third-party marketing trackers. We do not serve ads.</li>
+            </ul>
+            <p>You may clear all locally stored data at any time by signing out of the app or deleting the app from your device entirely.</p>
+
+            <h2>8. Contact Us</h2>
             <p>If you have questions about this policy, please contact us at:<br>
                 <strong>Email:</strong> support@gettubecurator.com
             </p>
